@@ -1,0 +1,3 @@
+export type BuildingRank = 'I' | 'II' | 'III'
+export type BuildingDefinition = { id: string; displayName: string; category: 'residential'; maximumLevel: 10; rankForLevel: (level: number) => BuildingRank; constructionCost: { wood: number; stone: number }; constructionDurationMs: number; populationCapacity: number }
+export const cottage: BuildingDefinition = { id: 'cottage', displayName: 'Cottage', category: 'residential', maximumLevel: 10, rankForLevel: (level) => level <= 3 ? 'I' : level <= 7 ? 'II' : 'III', constructionCost: { wood: 100, stone: 50 }, constructionDurationMs: 10_000, populationCapacity: 50 }

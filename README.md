@@ -4,7 +4,7 @@ Browser strategy game foundation. Gameplay is not implemented yet.
 
 ## Requirements
 
-Node.js 24 or later is recommended.
+Node.js 20 or later is required (`>=20`). Development has been verified on Node.js 24.
 
 ## Commands
 

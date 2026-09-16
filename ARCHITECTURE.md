@@ -10,11 +10,15 @@ This initial Alpha is client-side only. No backend is implemented.
 - Future game definitions for buildings, troops, research, costs, timers, and unlocks remain data-driven and separate from React components.
 - Timed systems use timestamps such as `startedAt` and `completesAt`, never browser-dependent decrementing counters.
 - Future multiplayer must replace local authority with server authority.
+- City building state is a keyed collection of six fixed plot IDs; fixed positions are defined separately in `src/game/cityLayout.ts`.
+- Building definitions are registered in `src/data/buildings.ts`; construction rules resolve definitions generically and population is derived from occupied instances.
+- Saves use schema version 2. The persistence boundary contains the explicit v1-to-v2 migration that adds the five new empty plots and discards legacy stored population.
 
 ## Folder responsibilities
 
 - `src/App.tsx`: current React shell, resource display, and build popup.
 - `src/game/rendering`: PixiJS integration for the current City plot.
+- `src/game/cityLayout.ts`: data-driven fixed City plot geometry.
 - `src/game/rules.ts`: pure construction and completion rules.
 - `src/data`: data-driven building definitions.
 - `src/state`: Zustand runtime state and hydration actions.

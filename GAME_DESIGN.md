@@ -8,3 +8,4 @@
 - Planned core resources: Food, Wood, Stone, Ore, Gold
 - Population system, construction timers, troop training, Council/Commander system, research, and PvE world-map combat
 - PvP and alliances are not part of the initial Alpha
+- The Alpha currently has six fixed City plots and permits simultaneous construction on separate plots.

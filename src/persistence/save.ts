@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { database } from './database'
-import { initialGameState, type GameStateData, type Plot } from '../game/rules'
+import { initialGameState, type GameStateData } from '../game/rules'
 import { getBuildingDefinition } from '../data/buildings'
 const ids=['cottage','barracks','storehouse','castle','research_lab','walls'] as const
 const structure=z.object({buildingId:z.enum(ids),level:z.number().int().min(1).max(10)})

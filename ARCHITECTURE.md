@@ -12,6 +12,8 @@ This initial Alpha is client-side only. No backend is implemented.
 - Future multiplayer must replace local authority with server authority.
 - City building state is a keyed collection of six fixed plot IDs; fixed positions are defined separately in `src/game/cityLayout.ts`.
 - Building definitions are registered in `src/data/buildings.ts`; construction rules resolve definitions generically and population is derived from occupied instances.
+- Building levels are authoritative; rank and effects are derived. Upgrades use an explicit `upgrading` state with timestamps.
+- Saves use schema version 3 with explicit v2-to-v3 migration (and the existing v1-to-v2 chain).
 - Saves use schema version 2. The persistence boundary contains the explicit v1-to-v2 migration that adds the five new empty plots and discards legacy stored population.
 
 ## Folder responsibilities

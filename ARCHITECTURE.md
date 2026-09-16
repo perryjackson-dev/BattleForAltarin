@@ -17,7 +17,7 @@ This initial Alpha is client-side only. No backend is implemented.
 ## Folder responsibilities
 
 - `src/App.tsx`: current React shell, resource display, and build popup.
-- `src/game/rendering`: PixiJS integration for the current City plot.
+- `src/game/rendering`: PixiJS integration for the current multi-plot City.
 - `src/game/cityLayout.ts`: data-driven fixed City plot geometry.
 - `src/game/rules.ts`: pure construction and completion rules.
 - `src/data`: data-driven building definitions.

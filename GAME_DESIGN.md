@@ -9,4 +9,4 @@
 - Planned core resources: Food, Wood, Stone, Ore, Gold
 - Population system, construction timers, troop training, Council/Commander system, research, and PvE world-map combat
 - PvP and alliances are not part of the initial Alpha
-- The Alpha currently has six fixed City plots and permits simultaneous construction on separate plots.
+- The foundation models 24 City plots with a starting Castle, Research Lab, and Walls at level 1. A City has one shared build queue; Storehouse is limited to one per City and other ordinary buildings are unlimited unless their definition says otherwise. Research and training remain future systems.
